@@ -4,6 +4,7 @@ This tutorial highlights how an Elasticsearch-Logstash-Kibana (ELK) network can 
 See here () for how the ELK network can be installed on via a Docker pull on Windows (WSL) platforms. 
 
 ## Background Discussion
+# Elasticsearch
 Elasticsearch is a distributed search and analytics engine that's used for: 
   - Storing, searching, and analyzing data
 Elasticsearch can store, search, and analyze large amounts of structured and unstructured data in near real-time
@@ -35,7 +36,7 @@ Elasticsearch can be combined with Logstash and Kibana to form the ELK network a
 
 
 
-**Logstash**
+# Logstash
 Logstash is a data processing pipeline that collects data from various sources in real time, transforms, and send the data. Logstash is often used to prepare data for analysis in Elasticsearch. 
 Before sending data to Elasticsearch, Logstash can be used to dynamically transform data of various forms and complexities. It can also be used to anonymize personal identifiable information (PII) data.
 
