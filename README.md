@@ -47,6 +47,16 @@ Kibana is primarily used for data visualization and exploration. It allows users
   - sudo apt update
   - sudo apt upgrade
 
+### Install Java 8 or Java 11 (Java 8 may no longer be easily available on JDK website)
+  - sudo apt install openjdk-11-jdk
+
+### Download Elasticsearch
+  - wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-7.14.0-amd64.deb
+#### Navigate to the Elasticsearch directory, extract and install it
+  - sudo dpkg -i elasticsearch-7.14.0-amd64.deb
+
+
+
 
 
 
