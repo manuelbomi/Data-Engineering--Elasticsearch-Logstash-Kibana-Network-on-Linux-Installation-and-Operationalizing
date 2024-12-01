@@ -29,3 +29,9 @@ Elasticsearch is built on Apache Lucene and is the heart of the Elastic Stack. I
 Elasticsearch has a RESTful API for interacting with the search engine and supports a wide range of query types. It also includes a variety of search and analysis features, such as: faceting, filtering, sorting, and highlighting
 
 Elasticsearch can be combined with Logstash and Kibana to form the ELK network as shown below. 
+
+
+
+
+![image](https://github.com/user-attachments/assets/dea703d9-c9d0-41bc-8181-20054d1a33df)
+
