@@ -44,8 +44,8 @@ Before sending data to Elasticsearch, Logstash can be used to dynamically transf
 Kibana is primarily used for data visualization and exploration. It allows users to create dashboards and interactive charts based on data stored in Elasticsearch. Kibana is thus a valuable tool for analyzing large volumes of logs, for monitoring applications, and for gaining operational insights through visual representations like line graphs, bar charts, heat maps, etc. 
 
 ### Update your Ubuntu system
-sudo apt update
-sudo apt upgrade
+  - sudo apt update
+  - sudo apt upgrade
 
 
 
