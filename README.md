@@ -233,7 +233,7 @@ The Kibana localhost homepage should be displayed as shown below:
 ![image](https://github.com/user-attachments/assets/0b7268e6-4222-4250-b7d4-8b86f2dcf76b)
 
 
-On Kibana, search for Elastic Dev tools. On the Dev tool, to observe all available indexes on the Elasticsearch database.  Type:
+On Kibana, search for Elastic Dev tools. On the Dev tool, to observe all available indexes (tables) on the Elasticsearch database, type:
 
   - GET /_cat/indices?v 
 
@@ -245,7 +245,7 @@ Search specifically for Logstash index data
 
   - GET /logstash/_search
 
-The Logstash log data as rendered via Kibana
+The Logstash log data as rendered via Kibana:
 
 
 ![image](https://github.com/user-attachments/assets/a06537a3-4eaf-421e-9504-6e30e54bffb0)
