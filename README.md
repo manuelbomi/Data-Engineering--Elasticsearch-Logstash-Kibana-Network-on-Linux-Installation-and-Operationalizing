@@ -31,7 +31,14 @@ Elasticsearch has a RESTful API for interacting with the search engine and suppo
 Elasticsearch can be combined with Logstash and Kibana to form the ELK network as shown below. 
 
 
-![image](https://github.com/user-attachments/assets/e4e91204-6a24-47b5-a3db-f07ab7b5af1a)
+
+
+
+
+**Logstash**
+Logstash is a data processing pipeline that collects data from various sources in real time, transforms, and send the data. Logstash is often used to prepare data for analysis in Elasticsearch. 
+Before sending data to Elasticsearch, Logstash can be used to dynamically transform data of various forms and complexities. It can also be used to anonymize personal identifiable information (PII) data.
+
 
 
 
