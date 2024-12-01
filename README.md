@@ -100,7 +100,44 @@ Also, on the yaml file, remove the # in the line that contains # xpack.security.
   - sudo apt update
   - sudo apt upgrade
 
-#### Instead of using sudo apt-get install logstash, it is best to navigate to the elastic.co homepage and search for Logsatsh binaries that have the same serial number as your Elasticsearch. The Elasticsearch in this tutorial is version ‘7.14.0’. It is best to download same version of Logstash, unzip it on your system and install it. The figure below shows the download page of Logstash 7.14.0
+Instead of using sudo apt-get install logstash, it is best to navigate to the elastic.co homepage and search for Logsatsh binaries that have the same serial number as your Elasticsearch. The Elasticsearch in this tutorial is version ‘7.14.0’. It is best to download same version of Logstash, unzip it on your system and install it. The figure below shows the download page of Logstash 7.14.0
+
+![image](https://github.com/user-attachments/assets/3883f6bd-2444-487a-aae9-a65acc4256d2)
+
+
+#### Use nano (or vi or vim) to create the Logstash configuration file. Use the command below from your Ubuntu terminal:
+
+  - nano logstash-apache.conf
+
+#### Add the content below to your logstash-apache.conf file. The content is also downloadable from the attached logstache-apache.conf file on this Github page 
+
+input {
+  file {
+    path => "/tmp/access_log"
+    start_position => "beginning"
+  }
+}
+
+filter {
+  if [path] =~ "access" {
+    mutate { replace => { "type" => "apache_access" } }
+    grok {
+      match => { "message" => "%{COMBINEDAPACHELOG}" }
+    }
+  }
+  date {
+    match => [ "timestamp" , "dd/MMM/yyyy:HH:mm:ss Z" ]
+  }
+}
+
+output {
+  elasticsearch {
+    hosts => ["localhost:9200"]
+  }
+  stdout { codec => rubydebug }
+}
+
+
 
 
 
