@@ -44,6 +44,9 @@ Before sending data to Elasticsearch, Logstash can be used to dynamically transf
 Kibana is primarily used for data visualization and exploration. It allows users to create dashboards and interactive charts based on data stored in Elasticsearch. Kibana is thus a valuable tool for analyzing large volumes of logs, for monitoring applications, and for gaining operational insights through visual representations like line graphs, bar charts, heat maps, etc. 
 
 
+
+
+
 ## Elasticsearch Installation
 #### Update your Ubuntu system
   - sudo apt update
@@ -92,6 +95,9 @@ Also, on the yaml file, remove the # in the line that contains # xpack.security.
 #### An example of the output of the command is shown below:
 
 ![image](https://github.com/user-attachments/assets/7af5bab9-8d38-483a-bf11-c6432c58ad1d)
+
+
+
 
 
 
@@ -181,8 +187,85 @@ The content of the access_log file will then be rendered by Logstash on the Linu
 ![image](https://github.com/user-attachments/assets/c308d804-135a-45ec-b641-18b01abcb674)
 
 
+
+
+
 ## Kibana Installation
-#### Download Kibana installation file from the elastic.co website. For compatibility, ensure that the serial number of the Kibana binaries is similar to the Elasticsearch and the Logstash serial number (‘7.14.0’)
+Download Kibana installation file from the elastic.co website. For compatibility, ensure that the serial number of the Kibana binaries is similar to the Elasticsearch and the Logstash serial number (‘7.14.0’)
+
+  - wget https://artifacts.elastic.co/downloads/kibana/kibana-7.14.0-linux-x86_64.tar.gz
+
+Unzip the downloaded file and navigate to the kibana-7.14.0/ folder
+
+  - tar -xzf kibana-7.14.0-linux-x86_64.tar.gz
+  - cd kibana-7.14.0/
+
+To start the Kibana service from command line, type:
+
+  ./bin/kibana
+
+Now, open Kibana at:
+
+#### http://localhost:5601
+
+The Kibana localhost homepage should be displayed as shown below:
+
+![image](https://github.com/user-attachments/assets/0b7268e6-4222-4250-b7d4-8b86f2dcf76b)
+
+
+On Kibana, search for Elastic Dev tools. On the Dev tool, to observe all available indexes on the Elasticsearch database.  Type:
+
+  - GET /_cat/indices?v 
+
+Run the command. You will observe that some default indexes (tables) and the Logstash index (table) are displayed as your available indices. Example is shown below:
+
+![image](https://github.com/user-attachments/assets/f00673a1-8792-41e3-91ae-57382f9ec41f)
+
+Search specifically for Logstash index data
+
+  - GET /logstash/_search
+
+The Logstash log data as rendered via Kibana
+
+
+![image](https://github.com/user-attachments/assets/a06537a3-4eaf-421e-9504-6e30e54bffb0)
+
+
+To verify that the ELK network can be accessed from either Elasticsearch or Kibana.
+Ensure that your ELK network is still on and running by checking the ELK components via their respective ports on the browser. After verifying that the ELK network is online, open an Ubuntu terminal and type:
+
+  - curl http://localhost/9200/_aliases?pretty=true
+
+#### Note that the curl ‘http://localhost/9200/_aliases?pretty=true’ specifically queries Elasticsearch for all its available network and indices. The Kibana and Logstash indices are shown by the Elasticsearch call as shown below: 
+
+![image](https://github.com/user-attachments/assets/61e3ba12-8570-495e-8fc1-2b803c6af4c0)
+
+Same query as the previous one without the ‘pretty’ argument (curl http://localhost/9200/_aliases) yields the output below:
+
+![image](https://github.com/user-attachments/assets/1baa2633-c0fb-4f5e-9b95-677f1c475e41)
+
+The command (curl http://localhost/9200/_aliases?pretty=true) can also be used via the browser instead of the terminal. Output is shown below:
+
+![image](https://github.com/user-attachments/assets/a247267b-38dc-4ca9-8cbc-5ab93a319e0c)
+
+
+From the terminal or the browser, the:
+
+
+  - curl localhost:9200/_cat/indices?v 
+
+
+command can be used to check the ELK network. Out as shown below
+
+
+![image](https://github.com/user-attachments/assets/ac8d9b25-78a8-4ca8-9610-5412d7ff8145)
+
+
+
+
+
+
+
 
 
 
