@@ -32,6 +32,9 @@ Elasticsearch can be combined with Logstash and Kibana to form the ELK network a
 
 
 
+![image](https://github.com/user-attachments/assets/f819a6ab-1160-4bb6-93c7-dcafd0e0e45c)
 
-![image](https://github.com/user-attachments/assets/dea703d9-c9d0-41bc-8181-20054d1a33df)
+
+
+
 
