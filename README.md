@@ -191,12 +191,18 @@ The content of the access_log file will then be rendered by Logstash on the Linu
 
   - http://localhost:9600/
 
+Example output is displayed below:
+
+
+
 ![image](https://github.com/user-attachments/assets/b24b4d4b-67a7-43f3-8a14-382809aaa01f)
 
 
 #### Browsers can also be used to render the content of the Logstash’s access_log file. To do that, use the command below on the browser:
 
   - http://localhost:9600/logstash*/_search
+
+Example output is shown below:
 
 ![image](https://github.com/user-attachments/assets/c308d804-135a-45ec-b641-18b01abcb674)
 
