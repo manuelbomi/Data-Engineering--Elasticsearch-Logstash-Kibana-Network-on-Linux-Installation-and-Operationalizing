@@ -1,7 +1,7 @@
 # Data-Engineering: Elasticsearch-Logstash-Kibana(EKL)Network-on-Linux: Installation and Operationalizing
 
 This tutorial highlights how an Elasticsearch-Logstash-Kibana (ELK) network can be installed and made operational on a Linux (Ubuntu) system. Without loss of generality, the approach that are highlighted in this tutorial could be used to install ELK networks on other Linux based systems. 
-See here (https://github.com/manuelbomi/Data-Engineering---Elasticsearch-Logstash-Kibana-EKL-Network-on-Docker---A-Tutorial) for how the ELK network can be installed on via a Docker pull on Windows (WSL) platforms. 
+See here https://github.com/manuelbomi/Data-Engineering---Elasticsearch-Logstash-Kibana-EKL-Network-on-Docker---A-Tutorial for how the ELK network can be installed via a Docker pull on Windows (WSL) operating systems. 
 
 # Background Discussion
 ## Elasticsearch
