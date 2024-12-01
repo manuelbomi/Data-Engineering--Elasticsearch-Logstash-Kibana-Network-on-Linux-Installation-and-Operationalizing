@@ -31,7 +31,7 @@ Elasticsearch has a RESTful API for interacting with the search engine and suppo
 
 Elasticsearch can be combined with Logstash and Kibana to form the ELK network as shown below. 
 
-
+![EKL iamge](https://github.com/user-attachments/assets/d46e3a25-ac22-4b8c-bcb3-dcf768a3296a)
 
 
 
