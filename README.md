@@ -65,6 +65,23 @@ Also, on the yaml file, remove the # in the line that contains # xpack.security.
 #### Reboot your system. Alternatively, you can restart Elasticsearch for your configurations to take effect
   - sudo systemctl restart elasticsearch
 
+#### After restarting, the command below will work for subsequent starting of Elasticsearch
+  - sudo systemctl start elasticsearch
+    
+#### You can automate Elasticsearch to always be part of your system startup with the command below:
+  - sudo systemctl enable elasticsearch
+
+#### Verify (via your browser or the Linux command line) that Elasticsearch is working
+
+#### On browser type: 
+  - http://localhost:9200
+
+
+Example of the output of the command is shown below:
+
+
+
+![image](https://github.com/user-attachments/assets/e9c6cf4a-79dd-4208-bfba-6eace53e9d85)
 
 
 
