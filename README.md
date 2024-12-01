@@ -73,11 +73,11 @@ Kibana is primarily used for data visualization and exploration. It allows users
 #### Navigate to the Elasticsearch directory, extract and install it
   - sudo dpkg -i elasticsearch-7.14.0-amd64.deb
 
-#### Open the Elasticsearch yaml file and allow it to be accessible from Localhost. Do this by removing the # from the #network.host line. 
+#### Open the Elasticsearch yaml file and allow it to be accessible from Localhost. Do this by removing the # from the <ins>#network.host</ins> line. 
   - sudo nano /etc/elasticsearch/elasticsearch.yml
 
 #### Configure Elasticsearch security settings  
-Also, on the yaml file, remove the # in the line that contains <ins>#xpack.security.enabled:true</ins> to enable basic security features for Elasticsearch
+Also, on the yaml file, remove the # in the line that contains <ins>#xpack.security.enabled:true</ins> to enable basic security features for Elasticsearch.
 
 #### Reboot your system. Alternatively, you can restart Elasticsearch for your configurations to take effect
   - sudo systemctl restart elasticsearch
@@ -85,7 +85,7 @@ Also, on the yaml file, remove the # in the line that contains <ins>#xpack.secur
 #### After restarting, the command below will work for subsequent starting of Elasticsearch
   - sudo systemctl start elasticsearch
     
-#### You can automate Elasticsearch to always be part of your system startup with the command below:
+#### You can also automate Elasticsearch to always be part of your system startup with the command below:
   - sudo systemctl enable elasticsearch
 
 #### Verify (via your browser or the Linux command line) that Elasticsearch is working
