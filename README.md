@@ -77,12 +77,19 @@ Also, on the yaml file, remove the # in the line that contains # xpack.security.
   - http://localhost:9200
 
 
-Example of the output of the command is shown below:
+#### Example of the output of the command is shown below:
 
 
 
 ![image](https://github.com/user-attachments/assets/e9c6cf4a-79dd-4208-bfba-6eace53e9d85)
 
+
+#### Alternatively, on command terminal type:
+  - curl http://localhost:9200
+
+#### An example of the output of the command is shown below:
+
+![image](https://github.com/user-attachments/assets/7af5bab9-8d38-483a-bf11-c6432c58ad1d)
 
 
 
