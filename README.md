@@ -138,6 +138,39 @@ output {
 }
 
 
+#### Use nano to create the /tmp/access_log file
+  - nano /tmp/access_log
+
+Add the example log below. You can also use another logs or dataset to populate the access_log file. The example log (obtained from: https://medium.com/@swinarah/run-logstash-in-ubuntu-1fc3a4638ff6 )is also downloadable from the attached access_log file on this Github page:
+
+71.141.244.242 - kurt [18/May/2011:01:48:10 -0700] "GET /admin HTTP/1.1" 301 566 "-" "Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.2.3) Gecko/20100401 Firefox/3.6.3"
+134.39.72.245 - - [18/May/2011:12:40:18 -0700] "GET /favicon.ico HTTP/1.1" 200 1189 "-" "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; InfoPath.2; .NET4.0C; .NET4.0E)"
+98.83.179.51 - - [18/May/2011:19:35:08 -0700] "GET /css/main.css HTTP/1.1" 200 1837 "http://www.safesand.com/information.htm" "Mozilla/5.0 (Windows NT 6.0; WOW64; rv:2.0.1) Gecko/20100101 Firefox/4.0.1"
+
+
+#### Navigate to the bin directory of the Logstash file and pass in the configuration file to Logstash:
+
+  - bin/logstash -f logstash-apache.conf
+
+Example on an Ubuntu terminal is shown below:
+
+![image](https://github.com/user-attachments/assets/ec68c062-e95f-4fc1-8990-b02c777f9506)
+
+The content of the access_log file will then be rendered by Logstash on the Linux terminal as shown below:
+
+![image](https://github.com/user-attachments/assets/fdc8fa3d-8f37-428a-9448-e4ad74e0aff2)
+
+
+
+
+![image](https://github.com/user-attachments/assets/0b6fd306-8872-4c08-844f-c5be3d163381)
+
+
+
+
+
+
+
 
 
 
