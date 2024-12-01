@@ -120,7 +120,7 @@ Also, on the yaml file, remove the # in the line that contains <ins>#xpack.secur
   - sudo apt update
   - sudo apt upgrade
 
-Instead of using sudo apt-get install logstash, it is best to navigate to the elastic.co homepage and search for Logsatsh binaries that have the same serial number as the Elasticsearch that you installed on the Elasticsearch installation step. The Elasticsearch in this tutorial is version ‘7.14.0’. It is best to download same version of Logstash, unzip it on your system and install it. The figure below shows the download page of Logstash 7.14.0 on the elastic.co website:
+Instead of using sudo apt-get install logstash, it is best to navigate to the elastic.co homepage and search for Logsatsh binaries that have the same serial number as the Elasticsearch that you installed on the Elasticsearch installation step. The Elasticsearch in this tutorial is version ‘7.14.0’. It is best to download same version of Logstash, unzip it on your system and install it. The figure below shows the download page of 'Logstash 7.14.0' on the elastic.co website:
 
 ![image](https://github.com/user-attachments/assets/3883f6bd-2444-487a-aae9-a65acc4256d2)
 
