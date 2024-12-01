@@ -3,13 +3,13 @@
 This tutorial highlights how an Elasticsearch-Logstash-Kibana (ELK) network can be installed and made operational on a Linux (Ubuntu 18.04.6 LTS (Bionic Beaver)) system. Without loss of generality, the approach that are highlighted in this tutorial could be used to install ELK networks on other Linux based systems. 
 See here () for how the ELK network can be installed on via a Docker pull on Windows (WSL) platforms. 
 
-Background Discussion
+## Background Discussion
 Elasticsearch is a distributed search and analytics engine that's used for: 
-•	Storing, searching, and analyzing data
+  - Storing, searching, and analyzing data
 Elasticsearch can store, search, and analyze large amounts of structured and unstructured data in near real-time
-•	Enterprise search
+  - Enterprise search
 Elasticsearch is a popular choice for enterprise search and discovery experiences. Enterprise search is a software technology that allows users within a company to search across various internal data sources like documents, emails, databases, and applications, effectively finding information from a single search bar, rather than navigating through individual storage systems; essentially acting as a company-wide search engine to access relevant information quickly and efficiently
-•	Log analytics and management
+  - Log analytics and management
 Elasticsearch is commonly used for log analytics, which can provide operational insights. 
 •	Security analytics
 Elasticsearch can be used for security analytics, such as analyzing access logs and other system security logs. 
