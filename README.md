@@ -167,8 +167,22 @@ The content of the access_log file will then be rendered by Logstash on the Linu
 
 
 
+#### Logstash can also be accessed on the 9600 port on localhost. To do that, type the command below on a browser:
+
+  - http://localhost:9600/
+
+![image](https://github.com/user-attachments/assets/b24b4d4b-67a7-43f3-8a14-382809aaa01f)
 
 
+#### Browsers can also be used to render the content of the Logstash’s access_log file. To do that, use the command below on the browser:
+
+  - http://localhost:9600/logstash*/_search
+
+![image](https://github.com/user-attachments/assets/c308d804-135a-45ec-b641-18b01abcb674)
+
+
+## Kibana Installation
+#### Download Kibana installation file from the elastic.co website. For compatibility, ensure that the serial number of the Kibana binaries is similar to the Elasticsearch and the Logstash serial number (‘7.14.0’)
 
 
 
