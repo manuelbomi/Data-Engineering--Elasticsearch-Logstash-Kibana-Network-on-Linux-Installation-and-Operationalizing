@@ -116,7 +116,7 @@ Also, on the yaml file, remove the # in the line that contains <ins>#xpack.secur
 
 
 ## Logstash Installation
-#### Update your system if you miss that step when installing Elasticsearch
+#### Update your system if you omit that step when installing Elasticsearch
   - sudo apt update
   - sudo apt upgrade
 
