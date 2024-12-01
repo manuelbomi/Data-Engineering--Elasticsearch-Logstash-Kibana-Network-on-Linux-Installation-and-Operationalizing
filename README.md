@@ -40,6 +40,10 @@ Elasticsearch can be combined with Logstash and Kibana to form the ELK network a
 Logstash is a data processing pipeline that collects data from various sources in real time, transforms, and send the data. Logstash is often used to prepare data for analysis in Elasticsearch. 
 Before sending data to Elasticsearch, Logstash can be used to dynamically transform data of various forms and complexities. It can also be used to anonymize personal identifiable information (PII) data.
 
+## Kibana
+Kibana is primarily used for data visualization and exploration. It allows users to create dashboards and interactive charts based on data stored in Elasticsearch. Kibana is thus a valuable tool for analyzing large volumes of logs, for monitoring applications, and for gaining operational insights through visual representations like line graphs, bar charts, heat maps, etc. 
+
+
 
 
 
