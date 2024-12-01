@@ -43,6 +43,8 @@ Before sending data to Elasticsearch, Logstash can be used to dynamically transf
 ## Kibana
 Kibana is primarily used for data visualization and exploration. It allows users to create dashboards and interactive charts based on data stored in Elasticsearch. Kibana is thus a valuable tool for analyzing large volumes of logs, for monitoring applications, and for gaining operational insights through visual representations like line graphs, bar charts, heat maps, etc. 
 
+
+## Elasticsearch Installation
 #### Update your Ubuntu system
   - sudo apt update
   - sudo apt upgrade
@@ -90,6 +92,16 @@ Also, on the yaml file, remove the # in the line that contains # xpack.security.
 #### An example of the output of the command is shown below:
 
 ![image](https://github.com/user-attachments/assets/7af5bab9-8d38-483a-bf11-c6432c58ad1d)
+
+
+
+## Logstash Installation
+#### Update your system if you miss that step when installing Elasticsearch
+  - sudo apt update
+  - sudo apt upgrade
+
+#### Instead of using sudo apt-get install logstash, it is best to navigate to the elastic.co homepage and search for Logsatsh binaries that have the same serial number as your Elasticsearch. The Elasticsearch in this tutorial is version ‘7.14.0’. It is best to download same version of Logstash, unzip it on your system and install it. The figure below shows the download page of Logstash 7.14.0
+
 
 
 
