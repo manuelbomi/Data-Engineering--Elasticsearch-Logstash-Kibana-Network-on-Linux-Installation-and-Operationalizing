@@ -86,6 +86,9 @@ Also, on the yaml file, remove the # in the line that contains <ins>#xpack.secur
 
 #### After restarting, the command below will work for subsequent starting of Elasticsearch
   - sudo systemctl start elasticsearch
+
+##### Alternatively, users can start Elasticsearch by using
+  - sudo service elasticsearch start
     
 #### You can also automate Elasticsearch to always be part of your system startup with the command below:
   - sudo systemctl enable elasticsearch
